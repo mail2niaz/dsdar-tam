@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_version">v3.3</string>
+    <string name="app_version">v3.4</string>
     <string name="welcome_msg">Welcome to ThoseAroundMe, Try out the app or just Log in</string>
     <!-- Map Keys -->
     <string name="niaz_release_key">AIzaSyCA3TzQYwfzMepiz5-hJIAXFArC-CqgbME</string>
