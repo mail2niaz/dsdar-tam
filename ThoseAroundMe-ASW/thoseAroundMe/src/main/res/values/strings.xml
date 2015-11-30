@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">v3.3</string>
+    <string name="welcome_msg">Welcome to ThoseAroundMe, Try out the app or just Log in</string>
+    <!-- Map Keys -->
+    <string name="niaz_release_key">AIzaSyCA3TzQYwfzMepiz5-hJIAXFArC-CqgbME</string>
+    <string name="niaz_debug_key">AIzaSyAjBZH69mqWtK3r0fYnuzaHIDoCxIZdwik</string>
+
+    <!-- <string name="david_map_key">AIzaSyCIncyXOBiWlfSnI3KX-3EOylhT0R6F38E</string> -->
+    <!-- <string name="senthil_map_key">AIzaSyCc903QNg0Z2HgysyBHNfBPy0fu_SNrqL8</string> -->
+    <!-- <string name="niaz_release_key">AIzaSyClJ8bcJlzCvY5PG6GN84oC1Yd0iifefYM</string> -->
+    <!-- <string name="muthu_map_key">AIzaSyCIncyXOBiWlfSnI3KX-3EOylhT0R6F38E</string> -->
+    <!-- <string name="sachin_map_key">AIzaSyCssLKrys4J8EquM82lLZxtZ_hXzVxA7PI</string> -->
+    <!-- <string name="yash_map_key">AIzaSyCjv6rlFn6fPxWQfBCTFim-iJCAvFyk5vM</string> -->
+    <!-- <string name="bharath_map_key">AIzaSyCXWxVx9SOv6gmJQhgB9_Ft3o3F3f7AExw</string> -->
+    <!-- <string name="vijay_map_key">AIzaSyAL8KSF7w02JgQKX2vDaBnDxre_tXIPH60</string> -->
+    <string name="app_name">ThoseAroundMe</string>
+    <string name="app_id">387548677997932</string>
+
+    <!-- hints and lables in login and signup -->
+
+    <string name="uname_hint">&#160;Name</string>
+    <string name="email_hint">&#160;Email</string>
+    <string name="phone_hint">&#160;Phone</string>
+    <string name="pwd_hint">&#160;Password</string>
+    <string name="confirm_pwd_hint">&#160;Confirm Password</string>
+    <string name="phone_or_email">&#160;Phone or Email</string>
+    <string name="password">&#160;Password</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="submit">Submit</string>
+    <string name="signup_suggestion">Don\'t have an account yet\?</string>
+    <string name="login_suggestion">Already a TAM Member\?</string>
+    <string name="forgot_passwprd"><u>Forgot Password\?</u></string>
+    <string name="country_hint">Choose your country</string>
+    <string name="delete">Delete</string>
+
+    <!-- content description -->
+    <string name="cdIvOr">User as divider between &quot;Sign up&quot; and &quot;Connect with Facebook&quot; button</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_user_account">UserAccountActivity</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_complete_sign_up">CompleteSignUpActivity</string>
+    <string name="title_activity_complete_signup">CompleteSignupActivity</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="title_activity_fb">Fb</string>
+    <string name="title_activity_send_fb_app_request">SendFbAppRequestActivity</string>
+    <string name="title_activity_team_view">TeamViewActivity</string>
+    <string name="title_activity_signup_thanks">SignupThanksActivity</string>
+    <string name="title_activity_fb_invite_followers">FbInviteFollowersActivity</string>
+    <string name="title_activity_map_view">MapViewActivity</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hi %1$s!</string>
+    <string name="email">Email : </string>
+    <string name="dob">DOB : </string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="init_lat">34.00000</string>
+    <string name="init_lng">-93.00000</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- team activity -->
+    <string name="alert">Alert</string>
+    <string name="show_all_markers">Show All</string>
+    <string name="menu_settings">Settings</string>
+    <string name="signout_menu">Sign Out</string>
+    <string name="create_menu">Create</string>
+    <string name="add_member_menu">Add Member</string>
+    <string name="logo">Those around me logo</string>
+    <string name="home_text">Home</string>
+    <string name="team_text">Team</string>
+    <string name="followers_text">Followers</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_teams">My Teams</string>
+    <string name="invitations">My Invitations</string>
+    <string name="my_followers">My Followers</string>
+
+    <!-- create team activity -->
+    <string name="team_name_hint">&#160;Team Name </string>
+    <string name="add_menu">Add </string>
+    <string name="cancel_menu_hint">Cancel </string>
+    <string name="team_menu_hint">Cancel </string>
+    <string name="no_contacts">No Contacts Found</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add_contact">Add</string>
+    <string name="search_match_other">Matches Other Field</string>
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="contacts_list_search_results_title">Contacts List Search for \"%s\"</string>
+
+</resources>

@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMainCreateTeam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android1:background="@color/dark_1"
+        android1:paddingBottom="20dp"
+        android1:paddingLeft="20dp"
+        android1:paddingRight="20dp"
+        android1:paddingTop="10dp" >
+
+        <ImageView
+            android1:id="@+id/imageIcon"
+            android1:layout_width="30dp"
+            android1:layout_height="30dp"
+            android1:layout_alignParentLeft="true"
+            android1:layout_alignParentTop="true"
+            android1:src="@drawable/invite" />
+
+        <TextView
+            android1:id="@+id/textViewTitle"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_above="@+id/relativeLayout1"
+            android1:layout_alignParentTop="true"
+            android1:layout_marginLeft="5dp"
+            android1:layout_toRightOf="@+id/imageIcon"
+            android:paddingRight="@dimen/listview_item_padding"
+            android1:text=""
+            android1:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android1:id="@+id/btnRequest"
+            style="?android:attr/buttonStyleSmall"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentRight="true"
+            android1:layout_alignParentTop="true"
+            android1:text="Request" />
+
+        <!-- instant contact information -->
+
+        <RelativeLayout
+            android1:id="@+id/relativeLayoutInsta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageIcon"
+            android1:layout_marginBottom="5dp"
+            android1:layout_marginTop="5dp"
+            android1:background="@drawable/rounded_corners1"
+            android1:paddingBottom="20dp"
+            android1:paddingLeft="20dp"
+            android1:paddingRight="20dp"
+            android1:paddingTop="20dp" >
+
+            <LinearLayout
+                android:id="@+id/line_lay_instant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android1:layout_centerHorizontal="true"
+                android1:orientation="horizontal" >
+
+                <EditText
+                    android1:id="@+id/etInstantPhone"
+                    android1:layout_width="match_parent"
+                    android1:layout_height="wrap_content"
+                    android1:layout_weight="1"
+                    android1:ems="10"
+                    android1:inputType="phone" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android1:id="@+id/btnInstantAdd"
+                    style="?android:attr/buttonStyleSmall"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:text="Add" />
+            </LinearLayout>
+
+            <ListView
+                android1:id="@+id/listViewInstant"
+                android1:layout_width="match_parent"
+                android1:layout_height="100dp"
+                android1:layout_below="@+id/line_lay_instant"
+                android:background="@color/white"
+                android:divider="@color/black" >
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android1:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutInsta"
+            android1:background="@drawable/rounded_corners1"
+            android1:paddingBottom="20dp"
+            android1:paddingLeft="20dp"
+            android1:paddingRight="20dp"
+            android1:paddingTop="20dp" >
+
+            <ListView
+                android1:id="@+id/listView1"
+                android1:layout_width="match_parent"
+                android1:layout_height="wrap_content"
+                android1:layout_below="@+id/line_lay"
+                android:background="@color/white"
+                android:divider="@color/black" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/line_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android1:layout_centerHorizontal="true"
+                android1:orientation="horizontal" >
+
+                <Button
+                    android1:id="@+id/btnCancel"
+                    style="?android:attr/buttonStyleSmall"
+                    android1:layout_width="wrap_content"
+                    android1:layout_height="wrap_content"
+                    android1:text="Clear" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="40dp"
+                    android:indeterminate="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

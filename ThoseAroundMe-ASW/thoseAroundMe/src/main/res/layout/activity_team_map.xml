@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/teamMapLayout"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     
+ 	<fragment 
+       android:id="@+id/TeamViewMap"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:clickable="true"
+       android:enabled="true"
+       android:fitsSystemWindows="true" 
+       class="com.google.android.gms.maps.SupportMapFragment" />
+ 	
+ 	<LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="15dp"
+         android:layout_marginTop="20dp"
+         android:orientation="horizontal" >
+
+         <TextView
+             android:id="@+id/tvMainPageMapMap"
+             android:layout_width="60dp"
+             android:layout_height="25dp"
+             android:padding="3dp"
+             android:background="@drawable/map_button_active" />
+         <TextView
+             android:id="@+id/tvMainPageMapSatellite"
+             android:layout_width="60dp"
+             android:layout_height="25dp"
+             android:padding="3dp"
+             android:background="@drawable/satellite_button_inactive" />
+         <TextView
+             android:id="@+id/tvMainPageMapHybrid"
+             android:layout_width="60dp"
+             android:layout_height="25dp"
+             android:padding="3dp"
+             android:background="@drawable/hybrid_button_inactive" />
+         
+     </LinearLayout>
+     
+ 	<Button
+      android:id="@+id/tvMainPageShowAllMembers"
+      android:layout_width="100dp"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+      android:layout_margin="5dp"
+      android:text="Show All" />
+ 	
+ </RelativeLayout>

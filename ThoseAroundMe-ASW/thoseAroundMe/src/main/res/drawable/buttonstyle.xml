@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false" android:state_pressed="true" ><shape>
+            <solid android:color="#979494" />
+
+            <stroke android:width="2dp" android:color="#928F8F" />
+
+            <corners android:radius="6dp" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+     <item  android:state_selected="true"  android:state_pressed="false"  > <shape>
+            <solid android:color="#BECBD3" />
+
+            <stroke android:width="2dp" android:color="#928F8F" />
+
+            <corners android:radius="6dp" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+    <item  android:state_selected="false"  android:state_pressed="false"  ><shape>
+            <gradient android:angle="270" android:endColor="#353333" android:startColor="#595353" />
+
+            <stroke android:width="4dp" android:color="#928F8F" />
+
+            <corners android:radius="7dp" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+
+    
+<!--     Non focused states -->
+<!--     <item android:state_selected="false" android:state_pressed="false" android:color="#3E8ABA" /> -->
+<!--     <item  android:state_selected="true"  android:state_pressed="false" android:color="#BECBD3" />  -->
+
+<!--     Pressed -->
+<!--        Non focused states -->
+<!--     <item android:state_selected="false" android:state_pressed="true" android:color="#EEF3F7" /> -->
+<!--     <item  android:state_selected="true"  android:state_pressed="true" android:color="#3E8ABA" /> -->
+
+   
+    
+    
+</selector>

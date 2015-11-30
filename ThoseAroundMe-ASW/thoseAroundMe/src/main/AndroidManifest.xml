@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dsdar.thosearoundme"
+    android:versionCode="1"
+    android:versionName="0.5.5.1">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <permission
+        android:name="com.dsdar.thosearoundme.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.dsdar.thosearoundme.permission.MAPS_RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+        <uses-library android:name="com.google.android.maps" />
+
+        <!--<meta-data-->
+        <!--android:name="com.google.android.maps.v2.API_KEY"-->
+        <!--android:value="@string/niaz_release_key" />-->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/niaz_release_key" />
+        <!--<meta-data-->
+        <!--android:name="com.facebook.sdk.ApplicationId"-->
+        <!--android:value="@string/app_id" />-->
+        <meta-data
+            android:name="android.support.UI_OPTIONS"
+            android:value="splitActionBarWhenNarrow" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:host="api.thosearoundme.com"
+                    android:pathPrefix="/SecurityTeam/verifyaccount"
+                    android:port="9090"
+                    android:scheme="http" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/noAnimTheme" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.TeamListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.FollowersListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.TeamMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name="com.dsdar.thosearoundme.TeamViewActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.ContactsListActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- Niaz Newly Added -->
+        <activity
+            android:name="com.dsdar.thosearoundme.TeamMemberAddActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.InvitationListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.mmp.MMPActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.tab.TMTabMainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.ep.EpActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.dsdar.thosearoundme.ContactsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.dsdar.thosearoundme.activity.MyProfileActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name="com.dsdar.thosearoundme.location.LocationUpdates" />
+        <!-- <service android:name=".LocationService" /> -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cfceda9d5713beb197c58c5edddaca48749ab720" />
+    </application>
+
+</manifest>

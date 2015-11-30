@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/listViewActivatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center_vertical"
+        android:focusable="false"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:ellipsize="marquee"
+         android:gravity="left|center_vertical"
+        android:focusable="false"
+        android:fontFamily="sans-serif"
+        android:paddingRight="@dimen/listview_item_padding"
+        android:singleLine="true"
+        android:text="Niaz Ahamed"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/name"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="@dimen/listview_item_padding"
+        android:singleLine="true"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/actionbar_bg" />
+
+    <RelativeLayout
+        android:id="@+id/teamMapLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true" >
+
+        <RelativeLayout
+            android:id="@+id/maptopbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/tvAddTeam"
+                android:layout_width="@dimen/activity_map_icon_width"
+                android:layout_height="@dimen/activity_map_icon_height"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/map_team_mgmt" />
+
+            <Button
+                android:id="@+id/tvAddMember"
+                android:layout_width="@dimen/activity_map_icon_width"
+                android:layout_height="@dimen/activity_map_icon_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/map_team_member_mgmt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/tvMan"
+                    android:layout_width="@dimen/activity_map_icon_width"
+                    android:layout_height="@dimen/activity_map_icon_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_follow_me_no" />
+
+                <Button
+                    android:id="@+id/btnMyLoc"
+                    android:layout_width="@dimen/activity_map_icon_width"
+                    android:layout_height="@dimen/activity_map_icon_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/map_gps" />
+
+                <Button
+                    android:id="@+id/btnStickyMarker"
+                    android:layout_width="@dimen/activity_map_icon_width"
+                    android:layout_height="@dimen/activity_map_icon_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/marker" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/TeamViewMap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/teamMenuLayout"
+            android:layout_below="@+id/maptopbar"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:clickable="true"
+            android:enabled="true"
+            android:fitsSystemWindows="true" />
+
+        <LinearLayout
+            android:id="@+id/teamMapLayoutInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="60dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvMainPageMapMap"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:background="@drawable/map_button_active"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/tvMainPageMapSatellite"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:background="@drawable/satellite_button_inactive"
+                android:padding="3dp" />
+
+            <TextView
+                android:id="@+id/tvMainPageMapHybrid"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:background="@drawable/hybrid_button_inactive"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tvMainPageShowAllMembers"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:text="@string/show_all_markers"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/teamMenuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/tab_icon_bg"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tvTeamActHome"
+                android:layout_width="39dp"
+                android:layout_height="54dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:drawableTop="@drawable/home_icon_green"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:text="@string/home_text"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTeamActTeam"
+                android:layout_width="39dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="145dp"
+                android:drawableTop="@drawable/team_icon_black"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:text="@string/team_text"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvTeamActFollowers"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawableTop="@drawable/followers_icon_black"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:text="@string/followers_text"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/teamMapLayoutInner"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/tvMainPageShowAllMembers"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvGpsAlert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="GPS Not Available"
+                android:textColor="@color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

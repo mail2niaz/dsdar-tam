@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="tab_icon_bg">#dcdcdc</color>
+    <color name="actionbar_bg">#FF9966</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>   
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gray">#D1CFF4</color>
+    <color name="holo_blue">#FF33B5E5</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="editview">#000</color>
+    <color name="dark_1">#333333</color>
+    <color name="dark_2">#232323</color>
+
+</resources>

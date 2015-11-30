@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="@drawable/member_dialog_bg" >
+    
+		<ImageView
+	        android:id="@+id/bCancelMemberDialog"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/delete_member" />
+
+	    <TextView
+	        android:id="@+id/tvMemberName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:text="MemberName"
+	        android:textColor="@android:color/white"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    <Button
+	        android:id="@+id/bMemberText"
+	        android:layout_width="280dp"
+	        android:layout_height="45dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/tvMemberName"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="5dp"
+	        android:background="@drawable/text_member" />
+	
+	    <Button
+	        android:id="@+id/bMemberCall"
+	        android:layout_width="280dp"
+	        android:layout_height="45dp"
+	        android:layout_below="@id/bMemberText"
+	        android:layout_centerHorizontal="true"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="10dp"
+	        android:background="@drawable/call_member" />
+	    
+	    <Button
+	        android:id="@+id/bMemberPush"
+	        android:layout_width="280dp"
+	        android:layout_height="45dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/bMemberCall"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@drawable/push_member" />
+	    
+	    <Button
+	        android:id="@+id/bMemberRemove"
+	        android:layout_width="280dp"
+	        android:layout_height="45dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/bMemberPush"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginBottom="10dp"
+	        android:background="@drawable/remove_member" />
+    
+</RelativeLayout>

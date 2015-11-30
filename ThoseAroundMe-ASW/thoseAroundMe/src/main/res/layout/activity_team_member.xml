@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMainTeamMembers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_icon_bg"
+    android:orientation="vertical" >
+        
+		<LinearLayout
+		    android:id="@+id/layout_team_member"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" >
+
+        	<ListView
+        	    android1:id="@+id/lvteam_member"
+        	    android1:layout_width="match_parent"
+        	    android1:layout_height="408dp"
+        	    android:background="@color/white"
+        	    android:divider="@color/black"
+        	    android:padding="6dp" >
+
+	        </ListView>
+	        
+		</LinearLayout>
+		
+		<RelativeLayout
+        android:id="@+id/layoutMenuTeamMemebers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/tab_icon_bg" >
+
+        <TextView
+            android:id="@+id/tvHomeTeamMemebers"
+            android:layout_width="39dp"
+            android:layout_height="54dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@drawable/home_icon_black"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="@string/home_text"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvTeamTabTeamMemebers"
+            android:layout_width="39dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="145dp"
+            android:drawableTop="@drawable/team_icon_green"
+            android:gravity="center"
+            android:paddingTop="6dp"
+            android:text="@string/team_text"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        
+        <TextView
+                android:id="@+id/tvFollowersTeamMemebers"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:drawableTop="@drawable/followers_icon_black"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:text="@string/followers_text"
+                android:textColor="@color/blue"
+                android:textSize="12sp" />
+    </RelativeLayout>
+        
+</RelativeLayout>

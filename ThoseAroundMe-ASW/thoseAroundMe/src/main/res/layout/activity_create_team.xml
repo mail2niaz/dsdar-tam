@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutCreateTeam"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etTeamName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android1:layout_marginBottom="15dp"
+        android:background="@drawable/text_box"
+        android:hint="@string/team_name_hint"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" />
+<FrameLayout 
+    android:id="@+id/frameLayoutCreateTeam"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+    <ListView
+        android:id="@+id/lvContactListCreateTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        style="@style/ContactListView">
+    </ListView>
+    
+<TextView
+    android:id="@+id/tvEmptyCreateTeam"
+    android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="@string/no_contacts"
+              android:fontFamily="sans-serif-light"
+              android:textAppearance="?android:attr/textAppearanceLarge"/>
+    
+    
+</FrameLayout>
+</LinearLayout>
